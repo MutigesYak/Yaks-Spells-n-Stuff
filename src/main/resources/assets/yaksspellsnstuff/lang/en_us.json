@@ -1,3 +1,10 @@
 {
-  "item.yaksspellsnstuff.druidium": "Druidium"
+  "item.yaksspellsnstuff.druidium": "Druidium",
+  "item.yaksspellsnstuff.raw_druidium": "Raw Druidium",
+
+  "block.yaksspellsnstuff.druidium_block": "Block of Druidium",
+  "block.yaksspellsnstuff.druidium_ore": "Druidium Ore",
+
+  "creativetab.yaksspellsnstuff.items": "Yak's Spells n' Stuff: Items",
+  "creativetab.yaksspellsnstuff.blocks": "Yak's Spells n' Stuff: Blocks"
 }
