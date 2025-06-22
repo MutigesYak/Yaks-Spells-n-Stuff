@@ -25,6 +25,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DRIUDIUM_ORE = registerBlock("druidium_ore",
             ()-> new DropExperienceBlock(UniformInt.of(6, 12),
                     BlockBehaviour.Properties.of().strength(6f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> DRIUDIUM_DEEPSLATE_ORE = registerBlock("druidium_deepslate_ore",
+            ()-> new DropExperienceBlock(UniformInt.of(10, 18),
+                    BlockBehaviour.Properties.of().strength(8f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

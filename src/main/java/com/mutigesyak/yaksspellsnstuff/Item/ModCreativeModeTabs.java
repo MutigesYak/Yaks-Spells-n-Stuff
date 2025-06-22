@@ -20,7 +20,7 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> Yaks_Spells_n_Stuff_Items = CREATIVE_MODE_TAB.register("yaks_spells_n_stuff_items",
             ()-> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DRUIDIUM.get()))
-                    .title(Component.translatable("creativetab.tutorialmod.yaks_spells_n_stuff_items"))
+                    .title(Component.translatable("creativetab.yaksspellsnstuff.items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.DRUIDIUM);
                         output.accept(ModItems.RAW_DRUIDIUM);
@@ -30,10 +30,11 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> Yaks_Spells_n_Stuff_Blocks = CREATIVE_MODE_TAB.register("yaks_spells_n_stuff_blocks",
             ()-> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.DRUIDIUM_BLOCK.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(YaksSpellsnStuff.MOD_ID, "yaks_spells_n_stuff_items"))
-                    .title(Component.translatable("creativetab.tutorialmod.yaks_spells_n_stuff_blocks"))
+                    .title(Component.translatable("creativetab.yaksspellsnstuff.blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.DRUIDIUM_BLOCK);
                         output.accept(ModBlocks.DRIUDIUM_ORE);
+                        output.accept(ModBlocks.DRIUDIUM_DEEPSLATE_ORE);
 
                     }).build());
 

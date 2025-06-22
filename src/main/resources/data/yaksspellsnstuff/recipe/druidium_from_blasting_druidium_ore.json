@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 1,
+  "group": "druidium",
+  "ingredient": {
+    "item": "yaksspellsnstuff:druidium_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "yaksspellsnstuff:druidium"
+  }
+}

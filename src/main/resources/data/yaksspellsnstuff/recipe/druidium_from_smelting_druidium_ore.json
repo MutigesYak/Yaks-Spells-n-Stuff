@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.75,
+  "group": "druidium",
+  "ingredient": {
+    "item": "yaksspellsnstuff:druidium_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "yaksspellsnstuff:druidium"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yaksspellsnstuff:druidium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "yaksspellsnstuff:druidium"
+  }
+}

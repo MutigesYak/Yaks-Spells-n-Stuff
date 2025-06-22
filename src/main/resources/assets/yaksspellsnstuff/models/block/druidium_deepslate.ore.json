@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures":  {
+    "all": "yaksspellsnstuff:block/druidium_deepslate_ore"
+  }
+}
