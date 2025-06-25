@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "yakspellsnstuff:druidium_block",
-    "yakspellsnstuff:druidium_ore",
-    "yakspellsnstuff:druidium_deepslate_ore"
+    "yaksspellsnstuff:druidium_block",
+    "yaksspellsnstuff:druidium_ore",
+    "yaksspellsnstuff:druidium_deepslate_ore"
   ]
 }
