@@ -13,6 +13,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_DRUIDIUM = ITEMS.register("raw_druidium",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> Radish =ITEMS.register("radish",
+            ()-> new Item(new Item.Properties().food(ModFoodProperties.Radish)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

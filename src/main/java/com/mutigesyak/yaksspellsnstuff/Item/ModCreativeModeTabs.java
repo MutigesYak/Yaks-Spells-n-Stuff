@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.DRUIDIUM);
                         output.accept(ModItems.RAW_DRUIDIUM);
+                        output.accept(ModItems.Radish);
 
                     }).build());
 
