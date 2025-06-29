@@ -24,4 +24,4 @@ public class ModTags {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(YaksSpellsnStuff.MOD_ID, name));
         }
     }
-}
+
