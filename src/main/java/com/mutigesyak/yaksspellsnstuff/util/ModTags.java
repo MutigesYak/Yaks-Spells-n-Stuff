@@ -10,11 +10,12 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_YAKSWEAPONSTIER_TOOL = createTag("needs_yaksweaponstier_tool");
+        public static final TagKey<Block> INCORRECT_FOR_YAKSWEAPONSTIER_TOOL = createTag("incorrect_for_yaksweaponstier_tool");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(YaksSpellsnStuff.MOD_ID, name));
         }
-    }
 
     }
 
@@ -24,4 +25,4 @@ public class ModTags {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(YaksSpellsnStuff.MOD_ID, name));
         }
     }
-
+}
