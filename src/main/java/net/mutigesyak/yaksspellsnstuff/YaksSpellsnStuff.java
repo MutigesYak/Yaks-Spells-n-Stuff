@@ -2,6 +2,7 @@ package net.mutigesyak.yaksspellsnstuff;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.mutigesyak.yaksspellsnstuff.item.ModCreativeModeTabs;
 import net.mutigesyak.yaksspellsnstuff.item.ModItems;
 import org.slf4j.Logger;
 
@@ -37,9 +38,10 @@ public class YaksSpellsnStuff {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
-        // Register the item to a creative tab
+
+        ModItems.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
