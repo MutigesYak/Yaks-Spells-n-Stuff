@@ -1,9 +1,12 @@
 package net.mutigesyak.yaksspellsnstuff;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.mutigesyak.yaksspellsnstuff.item.ModCreativeModeTabs;
 import net.mutigesyak.yaksspellsnstuff.item.ModItems;
+import net.mutigesyak.yaksspellsnstuff.spell.ModSpells;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -23,6 +26,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(YaksSpellsnStuff.MOD_ID)
+
 public class YaksSpellsnStuff {
     public static final String MOD_ID = "yaksspells";
     private static final Logger LOGGER = LogUtils.getLogger();
@@ -31,6 +35,7 @@ public class YaksSpellsnStuff {
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public YaksSpellsnStuff(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
+        ModSpells.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
         // Register ourselves for server and other game events we are interested in.
@@ -70,6 +75,20 @@ public class YaksSpellsnStuff {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
+
+
+
         }
     }
+
+
+    public static ResourceLocation id(@NotNull String path) {
+        return ResourceLocation.fromNamespaceAndPath(YaksSpellsnStuff.MOD_ID, path);
+    }
+
+
+
 }
+
+
+
